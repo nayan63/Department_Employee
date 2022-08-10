@@ -1,0 +1,5 @@
+package com.mindtree.employee.VO;
+
+public class Department {
+
+}

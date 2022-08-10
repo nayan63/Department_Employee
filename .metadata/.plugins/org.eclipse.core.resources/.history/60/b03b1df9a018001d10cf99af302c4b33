@@ -1,0 +1,5 @@
+package com.mindtree.department.exception;
+
+public class ResponseException {
+
+}

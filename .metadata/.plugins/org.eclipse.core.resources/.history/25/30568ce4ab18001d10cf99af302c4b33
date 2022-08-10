@@ -1,0 +1,16 @@
+package com.mindtree.employee.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.mindtree.employee.entity.Employee;
+
+@Service
+public interface EmployeeService {
+
+	Employee add(Employee  emp);
+	List<Employee> list();
+	Employee updateSalary(long id,double salary);
+	Employee assignOrUpdateDept()
+}

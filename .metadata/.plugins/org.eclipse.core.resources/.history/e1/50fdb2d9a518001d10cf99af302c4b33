@@ -1,0 +1,30 @@
+package com.mindtree.department.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.mindtree.department.entity.Department;
+import com.mindtree.department.exception.EmployeeNotFoundException;
+import com.mindtree.department.service.DepartmentService;
+
+@RestController
+@RequestMapping("/department")
+public class DepartmentController {
+
+	@Autowired
+	DepartmentService deptServe;
+	
+	public Department add(Department department)
+	{
+		return deptServe.add(department);
+	}
+	
+	public ResponseEntity<List<Department>> list() throws EmployeeNotFoundException
+	{
+		return (ResponseEntity<List<Department>>) deptServe.list();
+	}
+}

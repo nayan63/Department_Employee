@@ -1,0 +1,44 @@
+package com.mindtree.employee.implementation;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.mindtree.employee.entity.Employee;
+import com.mindtree.employee.repository.EmployeeRepository;
+import com.mindtree.employee.service.EmployeeService;
+
+public class EmployeeImplement implements EmployeeService {
+
+	@Autowired
+	EmployeeRepository empRepo;
+	
+	@Override
+	public Employee add(Employee emp) {
+		return empRepo.save(emp);
+	}
+
+	@Override
+	public List<Employee> list() {
+		return empRepo.findAll();
+	}
+
+	@Override
+	public Employee updateSalary(long id, double salary) {
+		Optional<Employee> employeeOP = empRepo.findById(id);
+		if(employeeOP.isPresent())
+		{
+			Employee emp = employeeOP.get();
+			return null;
+		}
+		return null;
+	}
+
+	@Override
+	public Employee assignOrUpdateDept(long empId, long deptId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
