@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy element &apos;Department.java&apos; to &apos;com.mindtree.employee.VO.Department.java&apos;&#x0D;&#x0A;- Original project: &apos;Department_Employee&apos;&#x0D;&#x0A;- Destination element: &apos;com.mindtree.employee.VO.Department.java&apos;&#x0D;&#x0A;- Original element: &apos;com.mindtree.department.entity.Department.java&apos;" description="Copy compilation unit" destination="=Employee/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.mindtree.employee.VO{Department.java" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.mindtree.department.entity{Department.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1660137882649" units="1" version="1.0"/>
-</session>

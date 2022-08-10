@@ -1,9 +1,0 @@
-package com.mindtree.department.service;
-
-import org.springframework.stereotype.Service;
-
-@Service
-public class DepartmentService {
-
-	Department add(Department department);
-}
